@@ -1,0 +1,29 @@
+article {
+    background-color: azure;
+    border-radius: 2vw;
+    padding: 1vw;
+    margin-bottom: 1vw;
+    width: 20vw;
+    /* height: 70vh; */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+  article img {
+    width: 19vw;
+    /* height: 19vw; */
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 1vw;
+    border-radius: 2vw;
+  }
+
+  article h3 {
+    font-size: 2vw;
+  }
+
+  article p {
+      font-size: 2vw;
+      margin: auto;
+      margin-bottom: .5rem;
+  }
