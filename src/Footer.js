@@ -5,6 +5,7 @@ class Footer extends React.Component {
     render() {
         return (
             <>
+                <footer>&copy; Liesl White 2022</footer>
             </>
         )
     }
