@@ -4,6 +4,7 @@ article {
     padding: 1vw;
     margin-bottom: 1vw;
     width: 20vw;
+    /* height: 70vh; */
     text-align: center;
     display: flex;
     flex-direction: column;
