@@ -1,6 +1,7 @@
 import React from 'react';
 import Card from 'react-bootstrap/Card'
 import ListGroup from 'react-bootstrap/ListGroup';
+import Col from 'react-bootstrap/Col';
 import './HornedBeast.css';
 
 class HornedBeast extends React.Component {
@@ -19,24 +20,26 @@ class HornedBeast extends React.Component {
 
     render() {
         return (
-            <Card>
-                <Card.Title>{this.props.title}</Card.Title>
-                <Card.Img
-                    src={this.props.image_url}
-                    alt={this.props.description}
-                    title={this.props.title}
-                    onClick={this.handleFavorites}
-                />
-                <Card.Body>
-                    <Card.Text>
-                        {this.props.description}
-                    </Card.Text>
-                </Card.Body>
-                <ListGroup className="beast-horns">
-                    <ListGroup.Item>Number of Horns: {this.props.horns}</ListGroup.Item>
-                    <ListGroup.Item onClick={this.handleFavorites}>{this.state.favorites} ❤️ Favorites</ListGroup.Item>
-                </ListGroup>
-            </Card>
+            <Col>
+                <Card className="h-100">
+                    <Card.Title>{this.props.title}</Card.Title>
+                    <Card.Img
+                        src={this.props.image_url}
+                        alt={this.props.description}
+                        title={this.props.title}
+                        onClick={this.handleFavorites}
+                    />
+                    <Card.Body>
+                        <Card.Text>
+                            {this.props.description}
+                        </Card.Text>
+                    </Card.Body>
+                    <ListGroup className="beast-horns">
+                        <ListGroup.Item>Number of Horns: {this.props.horns}</ListGroup.Item>
+                        <ListGroup.Item onClick={this.handleFavorites}>{this.state.favorites} ❤️ Favorites</ListGroup.Item>
+                    </ListGroup>
+                </Card>
+            </Col>
 
 
             // <>
