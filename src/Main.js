@@ -17,6 +17,7 @@ class Main extends React.Component {
                     keyword={beast.keyword}
                     horns={beast.horns}
                     key={index}
+                    addUnicorns={this.props.addUnicorns}
                 />
 
             )

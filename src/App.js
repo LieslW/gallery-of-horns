@@ -6,10 +6,26 @@ import Footer from './Footer';
 import data from './data.json';
 
 class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      unicorns: '',
+    };
+  };
+
+  addUnicorns = () => {
+    this.setState({
+      unicorns: this.state.unicorns + '🦄'
+    });
+  }
+
   render() {
     return (
       <>
-      <Header />
+      <Header 
+        unicorns={this.state.unicorns}
+        addUnicorns={this.addUnicorns}
+      />
       <Main 
         data={data}
       />
