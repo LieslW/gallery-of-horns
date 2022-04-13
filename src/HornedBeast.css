@@ -1,29 +1,48 @@
-article {
-    background-color: azure;
-    border-radius: 2vw;
-    padding: 1vw;
-    margin-bottom: 1vw;
-    width: 20vw;
-    /* height: 70vh; */
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-  }
-  article img {
-    width: 19vw;
-    /* height: 19vw; */
-    margin-right: auto;
-    margin-left: auto;
-    margin-bottom: 1vw;
-    border-radius: 2vw;
-  }
+.card {
+  background-color: azure;
+  border-radius: 2vw;
+  padding: 1vw;
+  margin-bottom: 1vw;
+  width: 20vw;
+  text-align: center;
+}
 
-  article h3 {
-    font-size: 2vw;
-  }
+.card-title {
+  font-size: 2vw;
+  margin-top: 0.5vw;
+}
 
-  article p {
-      font-size: 2vw;
-      margin: auto;
-      margin-bottom: .5rem;
-  }
+.card-img {
+  cursor: pointer;
+  width: 19vw;
+  height: 19vw;
+  margin-top: 1vw;
+  margin-right: 1vw;
+  margin-left: 0.5vw;
+  margin-bottom: 0.5vw;
+  border-radius: 2vw;
+}
+
+.card-img:hover {
+  border: 0.5vw solid mistyrose;
+  height: 18vw;
+  width: 18vw;
+}
+
+.card-body {
+  font-size: 1em;
+  overflow: auto;
+  text-align: center;
+
+}
+
+.list-group-item:last-of-type {
+  cursor: pointer;
+  padding: 1vw;
+  border-radius: 1vw;
+  background-color: mistyrose;
+}
+
+.list-group-item:last-of-type:hover {
+  background: linear-gradient(200deg, rgba(255, 0, 0, 1) 0%, rgba(255, 154, 0, 1) 10%, rgba(208, 222, 33, 1) 20%, rgba(79, 220, 74, 1) 30%, rgba(63, 218, 216, 1) 40%, rgba(47, 201, 226, 1) 50%, rgba(28, 127, 238, 1) 60%, rgba(95, 21, 242, 1) 70%, rgba(186, 12, 248, 1) 80%, rgba(251, 7, 217, 1) 90%, rgba(255, 0, 0, 1) 100%);
+}
