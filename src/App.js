@@ -22,14 +22,14 @@ class App extends React.Component {
   render() {
     return (
       <>
-      <Header 
-        unicorns={this.state.unicorns}
-        addUnicorns={this.addUnicorns}
-      />
-      <Main 
-        data={data}
-      />
-      <Footer />
+        <Header
+          unicorns={this.state.unicorns}
+          addUnicorns={this.addUnicorns}
+        />
+        <Main
+          data={data}
+        />
+        <Footer />
       </>
     )
   }

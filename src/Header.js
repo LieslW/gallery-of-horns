@@ -8,7 +8,7 @@ class Header extends React.Component {
                 <header>
                     <h1 onClick={this.props.addUnicorns}>
                         {this.props.unicorns}
-                        Gallery of Horns 
+                        Gallery of Horns
                         {this.props.unicorns}
                     </h1>
                 </header>

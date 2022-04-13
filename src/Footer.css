@@ -1,6 +1,20 @@
 footer {
-    /* height: 30vw; */
     text-align: center;
     margin-top: 2vw;
     margin-bottom: 2vw;
+}
+
+.hide-unis {
+    text-align: center;
+    font-size: 2vw;
+    font-style: italic;
+    font-family: 'Lobster', cursive;
+}
+
+.hide-unis:hover {
+    background-color: thistle;
+    color: darkmagenta;
+    border-radius: 1vw;
+    margin-left: 37vw;
+    margin-right: 37vw;
 }
