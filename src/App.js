@@ -12,6 +12,7 @@ class App extends React.Component {
     this.state = {
       unicorns: '',
       image_url: 'Hello, Beasties',
+      title: 'By golly, he\'s done it!',
       description: 'There are no happy endings because nothing  ends',
       showModal: false,
     };
@@ -29,10 +30,11 @@ class App extends React.Component {
     })
   }
 
-  openModal = (image_url, description) => {
+  openModal = (image_url, title, description) => {
     this.setState ({
       showModal: true,
       image_url: image_url,
+      title: title,
       description: description,
     })
   }
@@ -52,6 +54,7 @@ class App extends React.Component {
           hideModal={this.hideModal}
           showModal={this.state.showModal}
           image_url={this.state.image_url}
+          title={this.state.title}
           description={this.state.description}
         />
         <Footer />

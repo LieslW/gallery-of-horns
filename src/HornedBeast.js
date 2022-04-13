@@ -18,6 +18,10 @@ class HornedBeast extends React.Component {
         });
     };
 
+    handleShowModal = () => {
+        this.props.openModal(this.props.image_url, this.props.description)
+    }
+
     render() {
         return (
             <Col>
@@ -27,7 +31,7 @@ class HornedBeast extends React.Component {
                         src={this.props.image_url}
                         alt={this.props.description}
                         title={this.props.title}
-                        onClick={this.handleFavorites}
+                        onClick={this.handleShowModal}
                     />
                     <Card.Body>
                         <Card.Text>
