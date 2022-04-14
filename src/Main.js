@@ -1,16 +1,31 @@
 import React from 'react';
 import './Main.css';
+import HornForm from './HornForm';
 import HornedBeast from './HornedBeast';
 import Row from 'react-bootstrap/Row';
 import Container from 'react-bootstrap/Container';
 
 
 class Main extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            beasties: this.props.data,
+            horns: 0,
+        }
+    }
+
+    handleFilter = (value) => {
+        let newSet = this.props.data.filter(beast => beast.horns === value)
+        this.setState({
+            beasties: newSet
+        })
+    }
+
     render() {
         console.log(this.props.data);
-        let beastArr = [];
-        this.props.data.map((beast, index) => {
-            return beastArr.push(
+        let beasts = this.state.beasties.map((beast, index) => {
+            return (
                 <HornedBeast
                     _id={beast._id}
                     title={beast.title}
@@ -28,10 +43,13 @@ class Main extends React.Component {
 
         return (
             <>
+                <HornForm
+                    handleFilter={this.handleFilter}
+                />
                 <main>
                     <Container>
                         <Row className="mx-1" xs ={1} sm ={2} md={3} lg={4}>
-                            {beastArr}
+                            {beasts}
                         </Row>
                     </Container>
                 </main>
