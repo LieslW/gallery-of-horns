@@ -1,8 +1,7 @@
 .card {
   background-color: azure;
-  border-radius: 2vw;
-  padding: 1vw;
-  margin-bottom: 1vw;
+  /* border-radius: 0 0 1vw 1vw; */
+  padding-top: 1vw;
   width: 20vw;
   text-align: center;
 }
@@ -25,22 +24,27 @@
 
 .card-img:hover {
   border: 0.5vw solid mistyrose;
-  height: 18vw;
-  width: 18vw;
+  /* height: 18vw; */
+  /* width: 18vw; */
 }
 
 .card-body {
   font-size: 1em;
   overflow: auto;
   text-align: center;
-
+  
 }
+
+/* .list-group-item {
+  border-radius: 1vw;
+}   */
 
 .list-group-item:last-of-type {
   cursor: pointer;
-  padding: 1vw;
-  border-radius: 1vw;
+  /* padding: 1vw; */
+  /* border-radius: 1vw; */
   background-color: mistyrose;
+  /* margin-bottom: 0.2vw; */
 }
 
 .list-group-item:last-of-type:hover {

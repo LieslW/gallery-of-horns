@@ -1,6 +1,8 @@
 import React from 'react';
 import './Main.css';
 import HornedBeast from './HornedBeast';
+import Row from 'react-bootstrap/Row';
+import Container from 'react-bootstrap/Container';
 
 
 class Main extends React.Component {
@@ -18,6 +20,7 @@ class Main extends React.Component {
                     horns={beast.horns}
                     key={index}
                     addUnicorns={this.props.addUnicorns}
+                    openModal={this.props.openModal}
                 />
 
             )
@@ -26,7 +29,11 @@ class Main extends React.Component {
         return (
             <>
                 <main>
-                    {beastArr}
+                    <Container>
+                        <Row className="mx-1" xs ={1} sm ={2} md={3} lg={4}>
+                            {beastArr}
+                        </Row>
+                    </Container>
                 </main>
             </>
         )
