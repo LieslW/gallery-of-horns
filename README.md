@@ -12,15 +12,15 @@ Actual time needed to complete:  2 hours
 
 _________________________________________________________________________
 
-Number and name of feature: 2.0.0, modal and fuzzy search
+Number and name of feature: 2.0.0, modal
 
 Estimate of time needed to complete: 2 hours
 
-Start time: ~1pm
+Start time: 2pm
 
-Finish time: _____
+Finish time: 3:30pm
 
-Actual time needed to complete: _____
+Actual time needed to complete: 1 1/2 hours
 
 _________________________________________________________________________  
 
@@ -30,4 +30,6 @@ Icon Image: [Icons-Icons](https://icon-icons.com/)
 
 Icon-icons allows its users to download free and usable icons for their applications.  
 
-Font
+Font: [Google Fonts](https://fonts.google.com/)  
+
+Google fonts gives it users access to a variety of free to use fonts for their applications.  
