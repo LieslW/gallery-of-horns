@@ -24,6 +24,17 @@ Actual time needed to complete: 1 1/2 hours
 
 _________________________________________________________________________  
 
+Number and name of feature: 3.0.0, form
+
+Estimate of time needed to complete: 1 1/2 hours
+
+Start time: 2pm
+
+Finish time: 3pm
+
+Actual time needed to complete: 1 hour
+_________________________________________________________________________  
+
 Resources:
 
 Icon Image: [Icons-Icons](https://icon-icons.com/)
