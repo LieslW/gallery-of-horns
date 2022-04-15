@@ -16,7 +16,7 @@ class HornForm extends React.Component {
     render() {
         return (
             <>
-                <Form.Group>
+                <Form.Group className="sortment">
                     <Form.Label>Sort Me!</Form.Label>
                     <Form.Select onChange={this.handleBeasties}>
                         <option value={this.props.horns}>Everyone</option>
