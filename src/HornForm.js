@@ -19,7 +19,7 @@ class HornForm extends React.Component {
                 <Form.Group className="sortment">
                     <Form.Label>Sort Me!</Form.Label>
                     <Form.Select onChange={this.handleBeasties}>
-                        <option value={this.props.horns}>Everyone</option>
+                        <option value="{'data' : ['1', '2', '3', '100']}">Everyone</option>
                         <option value='1'>Single Horn</option>
                         <option value='2'>Double Horns</option>
                         <option value='3'>Triple Horns</option>
